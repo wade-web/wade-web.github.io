@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENCE IMMOBILIERE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="banner">
+
+        <header>
+          <nav>
+        <div class="navbar" >
+          <div class="toggle">
+            <i class="fas fa-bars" id="ouvrir"></i>
+            <i class="fas fa-times" id="fermer"></i>
+            
+        </div>
+    
+     <div class="log">
+     <p class="logo">LOGO</p>
+    </div>
+          <ul class="liste">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#featured">vedettes</a></li>
+            <!-- <li><a href="#">A Propos</a></li> -->
+
+            <li><a href="#contact">contact</a></li>
+          </ul>
+      </div>
+        </nav>
+        </header>
+  
+        <div class="content">
+            <h1>Trouvez votre maison idéal</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam<br />
+              cum ducimus accusantium blanditiis vitae, doloribus repellendus nobis!
+            </p>
+            <div>
+                <button type="button" onclick="filterProperties('louer')">A LOUER</button>
+                <button type="button" onclick="filterProperties('vendre')">A VENDRE</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="services" id="services">
+        <h1 class="heading"> Nos services </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./imgs/vente.png" alt="">
+                <h3>Achat Maison</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+                <a href=""  class="btn">Voir plus</a>
+            </div>
+            <div class="box">
+                <img src="./imgs/location.png" alt="">
+                <h3>Location Maison</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+                 <a href="" class="btn">Voir plus</a>
+            </div>
+            <div class="box">
+                <img src="./imgs/maisonvente.png" alt="">
+                <h3>Maison De Vente</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio ipsa ab cum error quas fuga ad? Perspiciatis, autem officiis?</p>
+                <a href="" class="btn">voir plus</a>
+            </div>
+        </div>
+    </section>
+    <section class="featured" id="featured">
+      <h1 class="heading"> <span>Propriétés </span> en vedette </h1>
+      <div class="box-container">
+          <div class="box louer active">
+              <div class="image-container">
+                  <img src="./imgs/maison1.jpeg" alt="">
+                  <div class="info">
+                      <h3>il y'a 1jours</h3>
+                      <h3>A Louer</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>1</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>25 000 $/Mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>maison Moderne</h3>
+                      <p>dakar, pikine-4104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i> 350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bain </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn">plus d'info</a>
+                      <a href="#" class="btn">voir détails</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box vendre active">
+              <div class="image-container">
+                  <img src="./imgs/maison1.jpg" alt="">
+                  <div class="info">
+                      <h3>il y'a 3jours</h3>
+                      <h3>a vendre</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>2</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>7</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>$25,000/mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>maison Moderne</h3>
+                      <p>dakar, nord foire-104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i> 350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn">plus d'info</a>
+                      <a href="#" class="btn">voir détails</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box louer active">
+              <div class="image-container">
+                  <img src="./imgs/maison2.png" alt="">
+                  <div class="info">
+                      <h3>il y'a 2jours</h3>
+                      <h3>a louer</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>1</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>$25,000/mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>maison Moderne</h3>
+                      <p>saint-louis , diamelaye-104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i> 350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn"> plus d'info</a>
+                      <a href="#" class="btn">voir détails</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box louer active">
+              <div class="image-container">
+                  <img src="./imgs/maison3.jpeg" alt="">
+                  <div class="info">
+                      <h3>il y'a 9jours</h3>
+                      <h3>a louer</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>2</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>$25,000/mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>maison moderne</h3>
+                      <p>dakar, almadi-104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i> 350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bain </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn">plus d'info</a>
+                      <a href="#" class="btn">voir détails</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box vendre active">
+              <div class="image-container">
+                  <img src="./imgs/maison4.jpeg" alt="">
+                  <div class="info">
+                      <h3>il y'a 10jours</h3>
+                      <h3>a vendre</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>3</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>$25,000/mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>Appartement moderne</h3>
+                      <p>dakar, mariste - 0104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn">plus d'info</a>
+                      <a href="#" class="btn">voir details</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="box vendre active">
+              <div class="image-container">
+                  <img src="./imgs/maison5.jpeg" alt="">
+                  <div class="info">
+                      <h3>il y'a 3jours</h3>
+                      <h3>a vendre</h3>
+                  </div>
+                  <div class="icons">
+                      <a href="#" class="fas fa-film"><h3>1</h3></a>
+                      <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="price">
+                      <h3>$25,000/mois</h3>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-envelope"></a>
+                      <a href="#" class="fas fa-phone"></a>
+                  </div>
+                  <div class="location">
+                      <h3>Appartement moderne</h3>
+                      <p>thies mbour- 400104</p>
+                  </div>
+                  <div class="details">
+                      <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                      <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                      <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn">plus d'info</a>
+                      <a href="#" class="btn">voir details</a>
+                  </div>
+              </div>
+          </div>
+  
+
+          <div class="box vendre active">
+            <div class="image-container">
+                <img src="./imgs/appartement3.jpeg" alt="">
+                <div class="info">
+                    <h3>il y'a 10jours</h3>
+                    <h3>a vendre</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Appartement moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box vendre active">
+            <div class="image-container">
+                <img src="./imgs/appartement4.jpeg" alt="">
+                <div class="info">
+                    <h3>il y'a 10jours</h3>
+                    <h3>a vendre</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Appartement moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box louer active">
+            <div class="image-container">
+                <img src="./imgs/appartement5.png" alt="">
+                <div class="info">
+                    <h3>il y'a 17jours</h3>
+                    <h3>a louer</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Appartement moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+        <div class="box vendre active">
+            <div class="image-container">
+                <img src="./imgs/appartement7.jpeg" alt="">
+                <div class="info">
+                    <h3>il y'a 10jours</h3>
+                    <h3>a vendre</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Appartement moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="./imgs/appartement8.png" alt="">
+                <div class="info">
+                    <h3>il y'a 10jours</h3>
+                    <h3>a vendre</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>Appartement moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+        <div class="box louer active">
+            <div class="image-container">
+                <img src="./imgs/maisonr2.jpeg" alt="">
+                <div class="info">
+                    <h3>il y'a 10jours</h3>
+                    <h3>a louer</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mois</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>maison moderne</h3>
+                    <p>dakar, mariste - 0104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i>  350m² </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 lits </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 bains </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn">plus d'info</a>
+                    <a href="#" class="btn">voir details</a>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contactez</span> nous </h1>
+    
+    <div class="icons-container">
+    
+        <div class="icons">
+            <img src="imgs/icon-1.png" alt="">
+            <h3>phone number</h3>
+            <p>123456789</p>
+        </div>
+    
+        <div class="icons">
+            <img src="imgs/icon-2.png" alt="">
+            <h3>addresse email </h3>
+            <p>devfreelance@gmail.com</p>
+           
+        </div>
+    
+         <div class="icons">
+            <img src="imgs/icon-3.png" alt="">
+            <h3>office address</h3>
+            <p>Sénégal, Dakar, Rufisque </p>
+        </div>
+    
+
+        <form action="">
+
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="text" placeholder="project" class="box">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn"> envoyez <i class="fas fa-paper-plane"></i> </button>
+    
+        </form>
+
+    </div>
+  </section>
+  <section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>lieu location</h3>
+                <a href="#">dakar</a>
+                <a href="#">saint-louis</a>
+                <a href="#">thies</a>
+                <a href="#">louga</a>
+                <a href="#">matam</a>
+            </div> 
+            
+            <div class="box">
+                <h3>liens utile</h3>
+                <a href="#">acceuil</a>
+                <a href="#services">services</a>
+                <a href="#featured">vedette</a>
+                <a href="#contact">contact</a>
+            </div> 
+            <div class="box">
+                <h3>réseaux sociaux</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+        </div>
+        <div class="credit">créé par <span> Madiop Wade </span> |  Tous droits réservés </div>
+    </div>
+</section>
+     <script src="./index.js"></script> 
+</body>
+</html>
